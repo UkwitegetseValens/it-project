@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Equipment Company</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <header>
+        <div class="slideshow">
+            <!-- Moving pictures go here -->
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="IT EQUIPMENT.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#">Departments</a>
+                <ul>
+                    <li><a href="#procurement">Procurement</a> - Responsible for sourcing IT equipment.</li>
+                    <li><a href="#accounting">Accounting</a> - Manages financial transactions.</li>
+                    <li><a href="#hr">Human Resource</a> - Manages HR activities.</li>
+                    <li><a href="#marketing">Marketing</a> - Promotes our products.</li>
+                    <li><a href="#it">IT</a> - Manages IT infrastructure.</li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are a leading provider of high-quality IT equipment, ensuring businesses have the best tools for success.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Contact our focal person for inquiries:</p>
+            <p>Focal Person: Valens</p>
+            <p>Email: ukwiegetsev9@gmail.com</p>
+            <p>Phone: +250780468216</p>
+        </section>
+        <section id="login">
+            <h2>Login</h2>
+            <form action="login.php" method="post">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br>
+                <label for="userType">User Type:</label>
+                <select id="userType" name="userType">
+                    <option value="admin">Admin</option>
+                    <option value="guest">Guest</option>
+                </select><br>
+                <input type="submit" value="Login">
+            </form>
+        </section>
+    </main>
+    
+
+    <style>
+        footer {
+          background-color: #333;
+          color: #fff;
+          text-align: center;
+          padding: 10px 0;
+          position: fixed;
+          bottom: 50px;
+          width: 100%;
+        }
+      </style>
+      </head>
+      <body>
+        
+        <footer id="footer"></footer>
+      
+        <script>
+          // Get the current date
+          var currentDate = new Date();
+      
+          // Format the date as needed
+          var formattedDate = currentDate.toLocaleDateString('en-US', {
+            weekday: 'long',
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+          });
+      
+          // Display the date in the footer
+          document.getElementById('footer').innerHTML = formattedDate;
+        </script>
+</body>
+</html>
+

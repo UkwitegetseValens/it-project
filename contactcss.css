@@ -1,0 +1,172 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.main{
+    width: 100%;
+    /* background-image: url(technology1.jpg); */
+    background-position: center;
+    background-size: cover;
+    height: 10vh;
+}
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+.icon{
+    color: #ff7200;
+    font-size: 35px;
+    font-family: Arial;
+    float: left;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 50px;
+}
+ul li a{
+    text-decoration: none;
+    color: blue;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s case-in-out;
+}
+ul li a:hover{
+    color: #ff7200;
+}
+.depart{
+    display: none;
+}
+.menu ul li:hover .depart
+{
+display: block;
+position: absolute;
+background: transparent;
+margin-top: 15px;
+margin-left: -15px;
+}
+.menu ul{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+.menu ul li:hover .depart ul{
+    display: block;
+    margin: 10px;
+}
+.menu ul li:hover .depart ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu ul li:hover .depart ul li:last-child{
+    border-bottom: none;
+}
+.menu ul li:hover .depart ul li a:hover{
+    color: #b2ff00;
+}
+.news{
+    width: 100%;
+    background-image: url(computer_hardware.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 30vh;
+    color: #ff7200;
+    font-size: 45px;
+    font-family: Arial;
+    float: left;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.news p{
+    text-align: center;
+    justify-content: center;
+}
+.news .p1{
+    text-align: center;
+    color: #3c819e;
+    font-family: Arial;
+    font-size: 70px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+.contact{
+    color:#ff7200;
+}
+.more{
+    margin-top: 280px;
+}
+.hour{
+    margin-top: 30px;
+}
+.phone{
+    margin-left: 300px;
+    margin-top: -55px;
+}
+.physical{
+    margin-left: 380px;
+    margin-top: -80px;
+
+}
+.phone{
+    margin-left: 700px;
+    margin-top: -45px;
+}
+.moreinfo{
+    margin-left: 1000px;
+    margin-top: -78px;
+}
+.final{
+    margin-top: 50px;
+    margin-left: 400px;
+    align-items: center;
+    justify-content: center;
+    display: block;
+}
+.final .p1{
+    padding-left: 30px;
+    font-family: Arial;
+}
+.final p{
+    font-family: Arial;
+}
+.final .p2{
+    padding-left: 30px;
+    font-family: Arial;
+
+}
+.send{
+    border-radius: 8px;
+    background-color: #ff7200;
+    color: black;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+.send:hover{
+    background-color: white;
+}

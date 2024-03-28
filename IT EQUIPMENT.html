@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <title>IT EQUPMENTS</title>
+        <link rel="stylesheet" href="IT EQUIPMENTS.css">
+    </head>
+    <body>
+        <div class="main">
+            <div class="navbar">
+                <div class="icon">
+                    <h3 class="logo">IT EQUIPMENTS COMPANY</h3>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="IT EQUIPMENT.html">HOME</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="aboutas.html">ABOUT</a></li>
+                        <li><a href="">DEPARTMENT</a>
+                        </div>
+                            <div class="depart">
+                                <ul>
+                                    <li><a href="">HUMAN RESOURCES</a></li>
+                                    <li><a href="">SALES</a></li>
+                                    <li><a href="">MARKETING</a></li>
+                                    <li><a href="">FINANCE</a></li>
+                                    
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                
+                <div class="search">
+                <input class="srch" id="searchInput" type="search" name="" placeholder="Search here">
+            <button class="btn" onclick="searchWord()"> search</button>
+            <div id="searchResults"></div>
+                </div>
+            </div> 
+        <div class="content">
+            <h1>IT EQUIPMENTS<br><span>Buy IT Equipment</span><br>For technology</h1>
+        <p class="par" name="p" >this is the company which intent to expand use of technology in our daily life
+             activities<br> by selling goods and service related to ICT<br>
+            like laptops,cases,cpu,memories,RAM,AND OTHER REMOVABLE MEDIA...together with its maintenance.
+        </p>
+         <button class="cn"><a href="#">JOIN US</a></button>
+         <div class="form">
+            <h2 id="loginh">Login Here</h2>
+         <a href="login.html" id="loginh">log in/Register</a>
+            <marquee style="bottom: -120px;"><img src="images/repair1.png" height="300px" width="400px"alt=""></marquee>
+            <style>
+                footer {
+                  background-color: #333;
+                  color: #fff;
+                  text-align: center;
+                  padding: 10px 0;
+                  position: fixed;
+                  bottom: 0;
+                  width: 100%;
+                }
+              </style>
+              </head>
+              <body>
+                
+                <footer id="footer"></footer>
+              
+                <script>
+                  // Get the current date
+                  var currentDate = new Date();
+              
+                  // Format the date as needed
+                  var formattedDate = currentDate.toLocaleDateString('en-US', {
+                    weekday: 'long',
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric'
+                  });
+              
+                  // Display the date in the footer
+                  document.getElementById('footer').innerHTML = formattedDate;
+
+
+                  function searchWord() {
+    var searchInput = document.getElementById('searchInput').value.toLowerCase();
+    var paragraphs = document.getElementsByTagName('p');
+    var searchResults = document.getElementById('searchResults');
+    searchResults.innerHTML = '';
+  
+    for (var i = 0; i < paragraphs.length; i++) {
+      var paragraphText = paragraphs[i].textContent.toLowerCase();
+      if (paragraphText.includes(searchInput)) {
+        var resultItem = document.createElement('p');
+        resultItem.textContent = 'Found in paragraph ' + (i + 1) + ': ' + paragraphs[i].textContent;
+        searchResults.appendChild(resultItem);
+      }
+    }
+  
+    if (searchResults.innerHTML === '') {
+      searchResults.textContent = 'No results found.';
+    }
+  }
+                  
+                </script>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>log in Here</title>
+	<style type="text/css">
+		.form
+		{
+			background-color: #ccc;
+			color: #ff7200;
+			width: 80%;
+			height: 60%;
+			outline: none;
+			border: thin blue outset;
+			padding: 10px;
+			border-radius: 25px;
+			margin-left: 10%;
+			margin-top: 15%;
+		}
+		h2{
+			text-transform: uppercase;
+			font: 'poppins',sans-serif;
+			font-size: x-large;
+			font-weight: 30px;
+			opacity: 0.7;
+			text-align: center;
+		}
+		label,span
+		{
+			color: midnightblue;
+			font: sans-serif;
+			font-weight: 20px;
+			display: block;
+			margin-left: 5%;
+
+		}
+		input{
+			width: 60%;
+			height: 35px;
+			outline: none;
+			border: none;
+			border-bottom:#ff7200 outset;
+			color: green;
+			display:block;
+			border-radius: 4px;
+			margin-left: 5%;
+			font-size: larger;
+			font-family: sans-serif;
+			color: black;
+
+		}
+
+
+		::placeholder{
+			color: green;
+		}
+		button
+		{
+			background-color: blue;
+			margin-left: 10%;
+			margin-right: 10%;
+			width: 45%;
+			border-radius: 3px;
+			outline: none;
+			border:black outset;
+			margin-top: 3%;
+			height: 30px;
+			color: white;
+			font: sans-serif;
+			font-size: larger;
+			text-transform: uppercase;
+		}
+		button:hover{
+			background-color: lightblue;
+			color: black;
+
+		}
+	</style>
+</head>
+<body >
+<form class="form" name="form" method="post" onsubmit="checkInputs()">
+<h2 id="heading">login in here</h2>
+<label for="email" id="email">Email</label>
+<input type="Email"  id="email" placeholder="Enter email" autocomplete="off">
+<div id="email_error">email not valid</div>
+
+<label for="username" >Username</label>
+<input type="text"  id="user" placeholder="Enter Username" autocomplete="off">
+<label for="password">Enter password</label>
+<input type="password"  id="password" placeholder="Enter password" autocomplete="off">
+<p><span id="Test" > your name is:</span></p>
+<button type="submit">login<button type="submit">register</button>
+</form>
+<script type="" src="events.js"></script>
+</body>
+</html>
